@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Pachêco | Desenvolvedor Front-end.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="code.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a id="logo" href="#hero">Lucas<span >.dev</span></a></div>
+            <nav>
+                <a href="#hero">Início</a>
+                <a href="sobreMin.html">Sobre Mim</a>
+                <a href="#projects">Projetos</a>
+                <a href="#testimonials">Depoimentos</a>
+                <a href="agenda.html">Contato</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Mais <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="https://www.linkedin.com/in/lucas-moreira-pacheco-32537620b/">Blog <span>Artigos e Novidades</span></a>
+                        <a href="#">Serviços <span>O que eu ofereço</span></a>
+                        <a href="#">Carreira <span>Minha Jornada Profissional</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero" id="hero">
+        <div class="badge">Desenvolvedor Front-end & UI/UX</div>
+        <img src="ChatGPT Image 25 de jul. de 2025, 19_51_40.png" alt="Minha Foto de Perfil" class="hero-avatar">
+        <h1>Olá! Eu sou o Lucas Pachêco, <br>crio experiências web incríveis.</h1>
+        <p>Sou um desenvolvedor apaixonado por construir interfaces de usuário intuitivas e envolventes. Com foco em desempenho e usabilidade, transformo ideias em realidade digital.</p>
+        <div class="hero-actions">
+            <button class="btn-primary"><i  class="fas fa-arrow-right"></i> Ver Projetos</button>
+            <a href="agenda.html"><button class="btn-secondary"><i class="fas fa-envelope"></i> Entrar em Contato</button></a>
+        </div>
+        
+    </main>
+
+    <section class="preview-section">
+        <div class="preview-window">
+            <div class="preview-window::before"></div>
+            <div class="window-top">
+                <div class="circle red"></div>
+                <div class="circle yellow"></div>
+                <div class="circle green"></div>
+            </div>
+            <div class="window-content" id="trabalhos">
+                <div class="logo-footer"><img src="ChatGPT Image 25 de jul. de 2025, 19_51_40.png" alt="logo dev"></div>
+                <h2>Explore Meus Trabalhos</h2>
+                <p>Veja alguns dos projetos que desenvolvi, demonstrando minhas habilidades em diversas tecnologias e soluções criativas.</p>
+                <button class="btn primary">Conheça meu Portfólio</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" id="features">
+        <div class="features-header">
+            <span class="pill selected">Minhas Habilidades</span>
+            <h2 class="title">Ferramentas e Tecnologias que Domino</h2>
+            <p class="subtitle">Com uma vasta gama de conhecimentos, estou preparado para os desafios mais complexos do desenvolvimento web.</p>
+        </div>
+        <div class="tab-menu">
+            <button class="tab" data-tab="design">Design & UI/UX</button>
+            <button class="tab active" data-tab="frontend">Front-end</button>
+            <button class="tab" data-tab="backend">Back-end</button>
+            
+        </div>
+        <div class="features-grid" id="features-grid">
+        </div>
+    </section>
+    
+    <section id="projects" aria-label="Projetos recentes e acadêmicos">
+    <h2>Meus Projetos</h2>
+    <div class="carousel-wrapper">
+        <button class="fas fa-arrow-left carousel-button" aria-label="Previous project"></button>
+        <div class="projects-carousel">
+            <article class="project-card" tabindex="0" aria-describedby="desc-viva-3">
+                <img src="VivaApp.png" alt="Captura de tela do aplicativo Projeto VIVA" class="project-thumbnail" loading="lazy" />
+                <h3>Projeto VIVA - Segurança da Mulher</h3>
+                <p id="desc-viva-3">Projeto mobile academico voltado para segurança pública voltado especialmente para mulheres em situação de vunerabilidade e violência domestica</p>
+                <div class="project-links">
+                    <a href="https://www.figma.com/proto/bqqQISmBEGGVpfzCtQTvPR/Seguran%C3%A7a-da-mulher?node-id=645-431&t=CkUzK3TyJJ8Ni2x0-1" target="_blank" rel="noopener noreferrer">Figma <i class="fas fa-file-export"></i></a>
+                </div>
+            </article>
+            <article class="project-card" tabindex="0" aria-describedby="desc-cortina">
+                <img src="CortinaInteligente.png" alt="Captura de tela do sistema de Cortina Inteligente" class="project-thumbnail" loading="lazy" />
+                <h3>Cortina Inteligente (IoT)</h3>
+                <p id="desc-cortina">Parte de um projeto empreendedor, este sistema de automação residencial foi desenvolvido com <strong>Arduino</strong>, demonstrando minha capacidade em integração de hardware e software para soluções inovadoras.</p>
+                <div class="project-links">
+                    <a href="LINK_DO_REPOSITORIO_CORTINA" target="_blank" rel="noopener noreferrer">Código <i class="fas fa-code"></i></a>
+                </div>
+            </article>
+            <article class="project-card" tabindex="0" aria-describedby="desc-gurubrasileirao">
+                <img src="Capturadetela2025-07-26163434.png" alt="Captura de tela do Projeto Guru do Brasileirão" class="project-thumbnail" loading="lazy" />
+                <h3>Guru do Brasileirão (Desenvolvimento Web)</h3>
+                <p id="desc-gurubrasileirao">Projeto de desenvolvimento web desenvolvido como parte da disciplina de <strong>Técnicas de Desenvolvimento Web</strong>, aprimorando minhas habilidades em front-end e interação com dados.</p>
+                <div class="project-links">
+                    <a href="https://github.com/lucaslmp2/GuruDoBrasileir-o" target="_blank" rel="noopener noreferrer">Código <i class="fas fa-code"></i></a>
+                </div>
+            </article>
+            <article class="project-card" tabindex="0" aria-describedby="desc-golex">
+                <img src="GFin.png" alt="Captura de tela do projeto GeFin" class="project-thumbnail" loading="lazy" />
+                <h3>GeFin</h3>
+                <p id="desc-golex">GeFin é uma aplicação web de front-end para gerenciamento de finanças pessoais. Permite ao usuário adicionar, editar, excluir e visualizar registros de crédito e débito de forma intuitiva.</p>
+                <div class="project-links">
+                    <a href="https://github.com/lucaslmp2/GeFin" target="_blank" rel="noopener noreferrer">Código <i class="fas fa-code"></i></a>
+                </div>
+            </article>
+            <article class="project-card" tabindex="0" aria-describedby="desc-golex">
+                <img src="Captura de tela 2025-08-14 170825.png" alt="Captura de tela do projeto GeFin" class="project-thumbnail" loading="lazy" />
+                <h3>Sortestudo</h3>
+                <p id="desc-golex">Sortestudo é uma aplicação web de front-end para estudantes. Permite ao usuário estudar com um gerenciador de tempo que utiliza método pomodoro, a aplicação conta ainda com player de videos LoFi para relaxamento e estudo, Historico de metas e sorteio de Aulas.</p>
+                <div class="project-links">
+                    <a href="https://sortestudo.netlify.app/app.html#" target="_blank" rel="noopener noreferrer">Site <i class="fas fa-globe"></i></a>
+                </div>
+            </article>
+        </div>
+        <button class="fas fa-arrow-right carousel-button" aria-label="Next project"></button>
+    </div>
+</section>
+    <section class="testimonials-section" id="testimonials">
+        <div class="testimonials-header">
+            <span class="pill">O que dizem sobre mim</span>
+            <h2>Depoimentos de Clientes e Colegas</h2>
+            <p>A satisfação é a minha maior recompensa. Veja o que as pessoas que trabalharam comigo têm a dizer.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="user-info">
+                    <img src="508388774_18509885986005386_1965365410675756863_n.jpg" alt="Avatar Cliente 1" class="avatar">
+                    <div>
+                        <strong>Ana Márcia</strong>
+                        <span class="role">Ana Márcia Arquiteta</span>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <p class="comment">"Lucas entregou um trabalho excepcional, superando todas as expectativas. Profissionalismo e qualidade impecáveis!"</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="user-info">
+                    <img src="491434160_659042140358271_1877280020357103664_n.jpg" alt="Avatar Cliente 2" class="avatar">
+                    <div>
+                        <strong>Iraci Alves</strong>
+                        <span class="role">Mãe</span>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="comment">"Ótimo filho, excelente profissional."</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="user-info">
+                    <img src="445907949_1860379867809523_8904380379291818608_n.jpg" alt="Avatar Cliente 3" class="avatar">
+                    <div>
+                        <strong>Saullo Santos</strong>
+                        <span class="role">Engenheiro Civil</span>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="comment">"Recomendo o Lucas para qualquer projeto. Ele é proativo, atencioso e com um olhar apurado para detalhes."</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="user-info">
+                    <img src="287772196_4974726189316580_1057349928619802160_n.jpg" alt="Avatar Cliente 3" class="avatar">
+                    <div>
+                        <strong>Decore Móveis Planejados</strong>
+                        <span class="role">Designer Sênior</span>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="comment">"Recomendo o Lucas para qualquer projeto. Me sinto muito satisfeito com seu trabalho."</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="cta-section">
+        <span class="cta-pill">Pronto para o próximo passo?</span>
+        <h2>Vamos Construir Algo Incrível Juntos!</h2>
+        <p>Se você tem um projeto em mente ou apenas quer conversar sobre desenvolvimento web, entre em contato.</p>
+        <div class="cta-buttons">
+            <a href="agenda.html"><button class="btn-primary">Iniciar um Projeto</button></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo-footer"><img src="ChatGPT Image 25 de jul. de 2025, 19_51_40.png" alt="imagem do dev"></div>
+                <h3>Lucas Moreira Pachêco</h3>
+                <p>Desenvolvedor Front-end & UI/UX</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/lucas-moreira-pacheco-32537620b/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/lucaslmp2"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/lucasmoreirapacheco_"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-columns">
+                <div>
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="sobreMin.html">Sobre Mim</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="agenda.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="mailto:lucaspachecolp2@gmail.com">lucaspachecolp2@gmail.com</a></li>
+                        <li><a href="tel:+5511999999999">+55 (73) 98871-6897</a></li>
+                        <li><address class="fas fa-location"> Itabuna-BA Brasil</address></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="text">&copy; 2025 Lucas Moreira Pachêco. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>
