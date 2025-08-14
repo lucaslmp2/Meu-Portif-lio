@@ -4,7 +4,7 @@ Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar m
 
 <!-- Você pode adicionar um link para a versão ao vivo do seu portfólio aqui -->
 **➡️ Acesse a versão ao vivo** 
-
+[Meu Portfólio](https://lucasdesenvolvedor.netlify.app/)
 ![Screenshot do Portfólio](Captura%20de%20tela%202025-08-14%20175333.png)
 
 
