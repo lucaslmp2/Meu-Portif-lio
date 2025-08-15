@@ -1215,6 +1215,9 @@ section#projects h2 {
     .project-card {
         flex: 0 0 calc(100% - 2rem); /* Make cards almost full width on small screens, accounting for gap */
     }
+    .features-grid{
+      display: inline;
+    }
     .carousel-button {
         padding: 0.3rem 0.6rem;
         font-size: 1.5rem;
