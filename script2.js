@@ -1,3 +1,17 @@
+const botao = document.querySelector('.botao-menu-hamburguer');
+const menu = document.querySelector('.navbar');
+
+botao.addEventListener('click', () => {
+    menu.classList.toggle('ativo');
+});
+
+// Garante que o menu fecha ao redimensionar para desktop
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 791) {
+        menu.classList.remove('ativo');
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // Smooth scrolling para os links da navbar
     document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
