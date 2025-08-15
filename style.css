@@ -28,16 +28,8 @@ a{
   gap: 200px;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: var(--primary-blue);
-  display: inline-table;
-}
-.logo span {
-  color: white;
-  margin-left: 0.5rem;
-}
+
+
 .logo-footer{
   width: 64px; height: 64px;
   border-radius: 50%;
@@ -558,19 +550,7 @@ nav a:hover {
 .footer-brand {
   max-width: 300px;
 }
-.logo {
-  width: 48px;
-  height: 48px;
-  background: #1e293b;
-  color: #93c5fd;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  margin-bottom: 0.5rem;
-  margin: auto;
-}
+
 .footer-columns{
   text-align: left;
 }
@@ -683,7 +663,7 @@ nav a:hover {
   /* Avatar circular */
   .hero-avatar {
     width: 128px;
-    border-radius: 100%;
+    border-radius:20rem;
     object-fit: cover;
     margin: 2rem auto 3rem;
     box-shadow: 0 0 15px #60a5faaa;
@@ -2087,6 +2067,84 @@ button.swiper-pagination-bullet {
 .navbarList{
   margin: auto;
 }
+/* Animação */
+@keyframes logoPulse {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 0px #60a5fa;
+  }
+  50% {
+    transform: scale(1.05);
+    text-shadow: 0 0 10px #60a5fa;
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 0px #60a5fa;
+  }
+}
+
+@keyframes logoFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Aplicação no logo */
+.logo a {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #60a5fa;
+  animation: logoFadeIn 0.8s ease-out forwards, logoPulse 2s infinite ease-in-out;
+}
+
+
+.logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Círculo animado */
+.logo-circle {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+}
+
+.logo-circle circle {
+  fill: #1e293b;              /* cor de fundo */
+  stroke: #60a5fa;            /* cor do traço */
+  stroke-width: 3;
+  stroke-dasharray: 283;      /* comprimento total da circunferência */
+  stroke-dashoffset: 283;     /* começa invisível */
+  animation: drawCircle 1.5s ease forwards;
+}
+
+@keyframes drawCircle {
+  to {
+    stroke-dashoffset: 0;     /* desenha o contorno */
+  }
+}
+
+.logo a {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #60a5fa;
+}
+
+.logo span {
+  color: white;
+  margin-left: 0.2rem;
+}
+
 @media screen and (max-width: 900px) {
     .botao-menu{
       display: block;
