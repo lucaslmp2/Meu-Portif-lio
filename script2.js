@@ -108,10 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    document.querySelector('.cta-buttons .btn-outline').addEventListener('click', () => {
-        // Simular uma ação, pode ser um modal ou link para um agendamento
-        alert('Você clicou em Agendar uma Chamada! Em um portfólio real, isso levaria a um formulário ou ferramenta de agendamento.');
-    });
 });
 document.addEventListener('DOMContentLoaded', () => {
         const carousel = document.querySelector('.projects-carousel');
@@ -141,3 +137,67 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+// script2.js
+document.addEventListener('DOMContentLoaded', () => {
+  // ===== 1) Carrossel dos projetos (#projects) =====
+  const projectsContainer = document.querySelector('#projects .swiper-container');
+  if (projectsContainer && window.Swiper) {
+    const prevBtn = document.querySelector('#projects [aria-label="Previous project"]');
+    const nextBtn = document.querySelector('#projects [aria-label="Next project"]');
+
+    new Swiper('#projects .swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      centeredSlides: false,
+      pagination: {
+        el: '#projects .swiper-pagination',
+        clickable: true
+      },
+      // Usa seus botões existentes (com aria-label)
+      navigation: {
+        prevEl: prevBtn || '#projects .swiper-button-prev',
+        nextEl: nextBtn || '#projects .swiper-button-next'
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      },
+      a11y: { enabled: true },
+      keyboard: { enabled: true }
+    });
+  }
+
+  // ===== 2) Carrossel de exemplo (.two) com coverflow =====
+  const showcaseContainer = document.querySelector('.swiper-container.two');
+  if (showcaseContainer && window.Swiper) {
+    new Swiper('.swiper-container.two', {
+      effect: 'coverflow',
+      loop: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      // No Swiper moderno é "coverflowEffect"
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 100,
+        depth: 150,
+        modifier: 1.5,
+        slideShadows: false
+      },
+      pagination: {
+        el: '.swiper-container.two .swiper-pagination',
+        clickable: true
+      },
+      // Se quiser usar também as setas padrão do Swiper (opcional)
+      navigation: {
+        prevEl: '.swiper-container.two .swiper-button-prev',
+        nextEl: '.swiper-container.two .swiper-button-next'
+      },
+      a11y: { enabled: true },
+      keyboard: { enabled: true }
+    });
+  }
+
+  // Dica: Remova o JS antigo que fazia carousel.scrollBy para não conflitar.
+});
+

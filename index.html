@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="code.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="script2.js" defer></script>
 </head>
 <body>
     <header>
@@ -75,55 +78,91 @@
         <div class="features-grid" id="features-grid">
         </div>
     </section>
-    
     <section id="projects" aria-label="Projetos recentes e acadêmicos">
-    <h2>Meus Projetos</h2>
-    <div class="carousel-wrapper">
-        <button class="fas fa-arrow-left carousel-button" aria-label="Previous project"></button>
-        <div class="projects-carousel">
-            <article class="project-card" tabindex="0" aria-describedby="desc-viva-3">
-                <img src="VivaApp.png" alt="Captura de tela do aplicativo Projeto VIVA" class="project-thumbnail" loading="lazy" />
-                <h3>Projeto VIVA - Segurança da Mulher</h3>
-                <p id="desc-viva-3">Projeto mobile academico voltado para segurança pública voltado especialmente para mulheres em situação de vunerabilidade e violência domestica</p>
-                <div class="project-links">
-                    <a href="https://www.figma.com/proto/bqqQISmBEGGVpfzCtQTvPR/Seguran%C3%A7a-da-mulher?node-id=645-431&t=CkUzK3TyJJ8Ni2x0-1" target="_blank" rel="noopener noreferrer">Figma <i class="fas fa-file-export"></i></a>
-                </div>
-            </article>
-            <article class="project-card" tabindex="0" aria-describedby="desc-cortina">
-                <img src="CortinaInteligente.png" alt="Captura de tela do sistema de Cortina Inteligente" class="project-thumbnail" loading="lazy" />
-                <h3>Cortina Inteligente (IoT)</h3>
-                <p id="desc-cortina">Parte de um projeto empreendedor, este sistema de automação residencial foi desenvolvido com <strong>Arduino</strong>, demonstrando minha capacidade em integração de hardware e software para soluções inovadoras.</p>
-                <div class="project-links">
-                    <a href="LINK_DO_REPOSITORIO_CORTINA" target="_blank" rel="noopener noreferrer">Código <i class="fas fa-code"></i></a>
-                </div>
-            </article>
-            <article class="project-card" tabindex="0" aria-describedby="desc-gurubrasileirao">
-                <img src="Capturadetela2025-07-26163434.png" alt="Captura de tela do Projeto Guru do Brasileirão" class="project-thumbnail" loading="lazy" />
-                <h3>Guru do Brasileirão (Desenvolvimento Web)</h3>
-                <p id="desc-gurubrasileirao">Projeto de desenvolvimento web desenvolvido como parte da disciplina de <strong>Técnicas de Desenvolvimento Web</strong>, aprimorando minhas habilidades em front-end e interação com dados.</p>
-                <div class="project-links">
-                    <a href="https://github.com/lucaslmp2/GuruDoBrasileir-o" target="_blank" rel="noopener noreferrer">Código <i class="fas fa-code"></i></a>
-                </div>
-            </article>
-            <article class="project-card" tabindex="0" aria-describedby="desc-golex">
-                <img src="GFin.png" alt="Captura de tela do projeto GeFin" class="project-thumbnail" loading="lazy" />
-                <h3>GeFin</h3>
-                <p id="desc-golex">GeFin é uma aplicação web de front-end para gerenciamento de finanças pessoais. Permite ao usuário adicionar, editar, excluir e visualizar registros de crédito e débito de forma intuitiva.</p>
-                <div class="project-links">
-                    <a href="https://github.com/lucaslmp2/GeFin" target="_blank" rel="noopener noreferrer">Código <i class="fas fa-code"></i></a>
-                </div>
-            </article>
-            <article class="project-card" tabindex="0" aria-describedby="desc-golex">
-                <img src="Captura de tela 2025-08-14 170825.png" alt="Captura de tela do projeto GeFin" class="project-thumbnail" loading="lazy" />
-                <h3>Sortestudo</h3>
-                <p id="desc-golex">Sortestudo é uma aplicação web de front-end para estudantes. Permite ao usuário estudar com um gerenciador de tempo que utiliza método pomodoro, a aplicação conta ainda com player de videos LoFi para relaxamento e estudo, Historico de metas e sorteio de Aulas.</p>
-                <div class="project-links">
-                    <a href="https://sortestudo.netlify.app/app.html#" target="_blank" rel="noopener noreferrer">Site <i class="fas fa-globe"></i></a>
-                </div>
-            </article>
-        </div>
-        <button class="fas fa-arrow-right carousel-button" aria-label="Next project"></button>
+        <h2>Meus Projetos</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+      <!-- Slide 1: Projeto VIVA -->
+      <div class="swiper-slide">
+        <article class="project-card" tabindex="0" aria-describedby="desc-viva">
+          <img src="VivaApp.png" alt="Captura de tela do aplicativo Projeto VIVA" class="project-thumbnail" loading="lazy" />
+          <h3>Projeto VIVA - Segurança da Mulher</h3>
+          <p id="desc-viva">Projeto mobile acadêmico voltado para segurança pública, com funcionalidades de alerta e geolocalização.</p>
+          <div class="project-links">
+            <a href="https://www.figma.com/proto/bqqQISmBEGGVpfzCtQTvPR/Seguran%C3%A7a-da-mulher" target="_blank" rel="noopener noreferrer">
+              Figma <i class="fas fa-file-export"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Slide 2: Cortina Inteligente -->
+      <div class="swiper-slide">
+        <article class="project-card" tabindex="0" aria-describedby="desc-cortina">
+          <img src="CortinaInteligente.png" alt="Captura de tela do sistema de Cortina Inteligente" class="project-thumbnail" loading="lazy" />
+          <h3>Cortina Inteligente (IoT)</h3>
+          <p id="desc-cortina">Parte de um projeto empreendedor com Arduino para automação residencial.</p>
+          <div class="project-links">
+            <a href="" target="_blank" rel="noopener noreferrer">
+              Código <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Slide 3: Guru do Brasileirão -->
+      <div class="swiper-slide">
+        <article class="project-card" tabindex="0" aria-describedby="desc-guru">
+          <img src="Capturadetela2025-07-26163434.png" alt="Captura de tela do Projeto Guru do Brasileirão" class="project-thumbnail" loading="lazy" />
+          <h3>Guru do Brasileirão (Desenvolvimento Web)</h3>
+          <p id="desc-guru">Projeto de desenvolvimento web desenvolvido como parte da disciplina de <strong>Técnicas de Desenvolvimento Web</strong>, aprimorando habilidades em front-end e interação com dados.</p>
+          <div class="project-links">
+            <a href="https://github.com/lucaslmp2/GuruDoBrasileir-o" target="_blank" rel="noopener noreferrer">
+              Código <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Slide 4: GeFin -->
+      <div class="swiper-slide">
+        <article class="project-card" tabindex="0" aria-describedby="desc-gefin">
+          <img src="GFin.png" alt="Captura de tela do projeto GeFin" class="project-thumbnail" loading="lazy" />
+          <h3>GeFin</h3>
+          <p id="desc-gefin">Aplicação web de front-end para gerenciamento de finanças pessoais, permitindo adicionar, editar e visualizar registros de crédito e débito.</p>
+          <div class="project-links">
+            <a href="https://github.com/lucaslmp2/GeFin" target="_blank" rel="noopener noreferrer">
+              Código <i class="fas fa-code"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Slide 5: Sortestudo -->
+      <div class="swiper-slide">
+        <article class="project-card" tabindex="0" aria-describedby="desc-sortestudo">
+          <img src="Captura de tela 2025-08-14 170825.png" alt="Captura de tela do projeto Sortestudo" class="project-thumbnail" loading="lazy" />
+          <h3>Sortestudo</h3>
+          <p id="desc-sortestudo">Aplicação web para estudantes com método Pomodoro, player LoFi, histórico de metas e sorteio de aulas.</p>
+          <div class="project-links">
+            <a href="https://sortestudo.netlify.app/app.html#" target="_blank" rel="noopener noreferrer">
+              Site <i class="fas fa-globe"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
     </div>
+
+    <!-- Paginação e navegação do Swiper -->
+    <div class="swiper-pagination"></div>
+    <!-- Se quiser, pode manter os botões internos do Swiper, mas os externos já funcionam -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
 </section>
     <section class="testimonials-section" id="testimonials">
         <div class="testimonials-header">
@@ -186,7 +225,6 @@
             </div>
         </div>
     </section>
-    <hr>
     <section class="cta-section">
         <span class="cta-pill">Pronto para o próximo passo?</span>
         <h2>Vamos Construir Algo Incrível Juntos!</h2>
