@@ -7,7 +7,7 @@ botao.addEventListener('click', () => {
 
 // Garante que o menu fecha ao redimensionar para desktop
 window.addEventListener('resize', () => {
-    if (window.innerWidth > 791) {
+    if (window.innerWidth > 900) {
         menu.classList.remove('ativo');
     }
 });
