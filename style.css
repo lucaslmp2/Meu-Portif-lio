@@ -2065,7 +2065,7 @@ button.swiper-pagination-bullet {
     font-size: 1.5rem;
 }
 .navbarList{
-  margin: auto;
+  margin: 20;
 }
 /* Animação */
 @keyframes logoPulse {
@@ -2105,11 +2105,11 @@ button.swiper-pagination-bullet {
 
 
 .logo {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+    position: absolute;
+    display: flex;
+    align-items: inherit;
+    justify-content: space-around;
+    gap: 1rem;
 }
 
 /* Círculo animado */
@@ -2147,7 +2147,7 @@ button.swiper-pagination-bullet {
 
 @media screen and (max-width: 900px) {
     .botao-menu{
-      display: block;
+      display: contents;
     }
     .menu{
       display: block;
