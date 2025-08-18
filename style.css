@@ -708,7 +708,7 @@ nav a:hover {
 section#projects {
     max-width: 1920px;
     margin: 0 auto 4rem;
-    padding: 0 2rem;
+    padding: 0;
     /* Removed display: grid; from here */
 }
 
@@ -1320,11 +1320,11 @@ footer .social-links a:hover {
         font-size: 0.9rem;
     }
     main.hero h1 {
-        font-size: 2.5rem;
-        text-align: justify;
+        font-size: 1.5rem;
+        text-align: center;
     }
     main.hero p {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         text-align: justify;
     }
     .window-content p{
@@ -1351,7 +1351,27 @@ footer .social-links a:hover {
     display: flow;
     margin: auto;
     }
-    
+  .footer-columns {
+  display: flex;
+  gap: 3rem;
+  text-align: left;
+  align-items: flex-start;
+  align-content: flex-start;
+  align-self: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  margin: 51px;
+  }
+  .footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: block;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-between;
+  margin-bottom: auto;
+  } 
     .testimonials-header p {
       text-align: justify;
     }
@@ -1363,6 +1383,7 @@ footer .social-links a:hover {
     .btn-primary, .btn-secondary {
         width: 100%;
         margin-left: 0;
+        align-self: anchor-center;
     }
 }
 .swiper-pagination-bullet{border: 1px solid #1da1f2;}.swiper-pagination-bullet-active{background:#173548}
